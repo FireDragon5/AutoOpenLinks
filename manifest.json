@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Open Links",
+  "version": "1.0",
+  "description": "Automatically opens specified links",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "bookmarks",
+    "tabs",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

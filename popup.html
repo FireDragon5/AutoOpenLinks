@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Manage Links/title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Add Link</h2>
+        <div class="settings-icon" id="settingsIcon">
+          <span>⚙️</span>
+        </div>
+      </div>
+      <input
+        type="text"
+        id="bookmarkNameInput"
+        placeholder="Enter link name" />
+      <input
+        type="text"
+        id="bookmarkUrlInput"
+        placeholder="Enter link URL" />
+      <button id="addBookmark">Add Bookmark</button>
+
+      <h2>Saved Links</h2>
+      <ul id="bookmarkList"></ul>
+    </div>
+
+    <div class="settings-container" id="settingsContainer">
+      <div class="settings-dialog">
+        <h3>Settings</h3>
+        <div class="theme-switch">
+          <label for="themeToggle">Light/Dark Mode</label>
+          <!-- Switch -->
+          <label class="switch">
+            <input type="checkbox" id="themeToggle" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <button id="closeSettings">Close</button>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
